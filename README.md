@@ -35,4 +35,4 @@ answer, including your reasoning, to this markdown file.
 
 ## Answer
 
-The while loop continues until the 'end' node is reached or until there is a need to backtrack when there is no unvisited neighbor that can be reached. In the worse case, the while loop might iterate through all vertices in the graph. Inside the while loop, there is a for loop that iterates over the neighbors of the current node. In the worse case, this loop would iterate through all the edges of the graph. So, in the worst case, for each vertex, all edges would need to be considered, leading to a time complexity of $O(E * V)$. 
+The while loop continues until the 'end' node is reached or until there is a need to backtrack when there is no unvisited neighbor that can be reached. In the worse case, the while loop might iterate through all vertices in the graph. Inside the while loop, there is a for loop that iterates over the neighbors of the current node. In the worse case, this loop would iterate through all outgoing edges of the current node. So, in the worst case, for each vertex, all outgoing edges would need to be considered, leading to a time complexity of $O(E + V)$. 
