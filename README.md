@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12784446&assignment_repo_type=AssignmentRepo)
 # Augmenting Paths
 
 When we talked about the Ford-Fulkerson algorithm to find the maximum flow
@@ -31,3 +32,7 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+## Answer
+
+The while loop continues until the 'end' node is reached or until there is a need to backtrack when there is no unvisited neighbor that can be reached. In the worse case, the while loop might iterate through all vertices in the graph. Inside the while loop, there is a for loop that iterates over the neighbors of the current node. In the worse case, this loop would iterate through all outgoing edges of the current node. So, in the worst case, for each vertex, all outgoing edges would need to be considered, leading to a time complexity of $O(E + V)$. 
